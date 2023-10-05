@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="validate_form.js">
+  </script>
+  <style>
+  body{
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: pink;
+  }
+  .container {
+      padding: 10px;
+    background-color: lightblue;
+  }
+  input[type=text], input[type=password], input[type=number], input[type=date], select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 2px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=submit], input[type=reset]{
+    width: 100px;
+    padding: 5px;
+    margin: 5px 0 2px 0;
+    display: inline-block;
+    background:green;
+  }
+  div {
+             padding: 10px 0;
+          }
+  </style>
+</head>
+    <body>
+        <h1>Registration Form</h1>
+        <div class ="container">
+        <form name="registration" method="" action="" onSubmit="return formValidation();">
+            <table width="80%">
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" name="firstname"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label>&nbsp;&nbsp;</td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><textarea rows="5" cols="5" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Contact Number</label></td>
+                    <td><input type="number" name="contact"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="gender"  value="male"><span>Male</span>
+                      <input type="radio" name="gender" value="female"><span>Female</span></td>
+                </tr>
+                <tr>
+                    <td><label>Qualifications</label></td>
+                    <td><input type="checkbox" name="check1" value="btech" >Btech &nbsp;&nbsp;
+                        <input type="checkbox" name="check2" value="diploma">Diploma
+                        &nbsp;&nbsp;<input type="checkbox" name="check3" value="hs">Higher Secondary&nbsp;&nbsp;
+                        <input type="checkbox" name="check4" value="sslc">SSLC</td>
+                </tr>
+                <tr>
+                    <td><label>Nationality</label></td>
+                    <td><select name="nationality">
+                      <option value ="Select">Select</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Others">Others</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Submit Form"></td>
+                    <td><input type="reset" name="reset" value="Reset Form"></td>
+                </tr>
+        </table>
+        </form>
+      </div>
+    </body>
+</html>

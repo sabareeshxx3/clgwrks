@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>JAVA SCRIPT STRING OPRATOINS</h1>
+    <script>
+        var text1="Good"
+        var text2="morning friends"
+        document.write("<br><br>"+text1);
+        document.write("<br>"+text2);
+        var text3=text1+text2;
+        document.write("<br>"+text3);
+        var slice = text3.slice(12,19)
+        document.write("<br>"+slice);
+        var substring = text3.substring(12,19)
+        document.write("<br>"+substring);
+        var substr = text3.substr(12,19)
+        document.write("<br>"+substr);
+
+        var lenght = text3.length;
+        document.write("<h4>length is </h4>"+lenght)
+
+        var replace = text3.replace("friends","students");
+        document.write("<br>"+replace)
+
+        var text4 = text3.toUpperCase();
+        document.write("<br>"+text4)
+
+        var text5 = text3.toLowerCase();
+        document.write("<br>"+text5)
+
+        var text6 = text3.charAt(3);
+        document.write("<br>"+text6);
+
+        document.write("<h1>Math Fuction</h1>")
+        var sqrt =  Math.sqrt(4);
+        document.write("<br>4 sqrt is "+sqrt)
+        var min = Math.min(10,2,50,3);
+        document.write("<br>min is "+min)
+        var max = Math.max(10,2,50,3);
+        document.write("<br>max is "+max)
+        var ceil = Math.ceil(2.5);
+        document.write("<br>"+ceil)
+        var floor = Math.floor(2.5);
+        document.write("<br>"+floor)
+        var pow = Math.pow(2,3)
+        document.write("<br>"+pow)
+
+
+
+
+    </script>
+</body>
+</html>

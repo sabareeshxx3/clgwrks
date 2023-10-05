@@ -1,0 +1,14 @@
+SELECT DISTINCT  sate FROM city;
+SELECT qtynohand FROM product_master WHERE qtynohand  BETWEEN 100 AND 200;
+SELECT salary FROM salesman_master WHERE salary BETWEEN 3000 AND 5000;
+SELECT name FROM client_mastser3 WHERE city= 'mumbai' OR  city='chennai';
+SELECT * FROM salesman_master WHERE salesman_name LIKE 'A%';
+SELECT name FROM client_mastser3 WHERE NOT  state='karnataka' OR state='tamilnadu';
+SELECT * FROM client_mastser3 WHERE name LIKE 'I%';
+SELECT * FROM salesman_master WHERE sate LIKE 'A%';
+ SELECT * FROM salesman_master ORDER BY salary ASC;(m)
+ SELECT * FROM client_mastser3 ORDER BY baldue DESC;(n)
+ SELECT client_mastser3.name AS "client_mastser3", salesman_master.salesman_name, salesman_master.city FROM client_mastser3,salesman_master WHERE client_mastser3.city=salesman_master.city;(k)
+
+
+
